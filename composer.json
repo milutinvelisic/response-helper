@@ -1,0 +1,28 @@
+{
+  "name": "milutinvelisic/response-helper",
+  "description": "A simple Laravel package for consistent JSON responses.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "YourVendor\\ResponseHelper\\": "src/"
+    }
+  },
+  "providers": [
+    "MilutinVelisic\\ResponseHelper\\Providers\\ResponseHelperServiceProvider"
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.1",
+    "illuminate/http": "^9.0|^10.0|^11.0",
+    "illuminate/support": "^9.0|^10.0|^11.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MilutinVelisic\\ResponseHelper\\Providers\\ResponseHelperServiceProvider"
+      ]
+    }
+  }
+}
